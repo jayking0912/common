@@ -6,9 +6,18 @@ type SendType int32
 const (
 	ConnectInfo SendType = 0
 	ReceiveData SendType = 1
+	ToolPset    SendType = 2
 	//Policy_MID      SendType = 2
 	//Policy_AVG      SendType = 3
 )
+
+type RecipeInfo struct {
+	TargetPoint [4]byte //目标点位
+	TargetPset  int     //目标pset
+	Xtolerance  int     //x公差
+	Ytolerance  int     //y公差
+
+}
 
 type ToolData struct {
 	TightingID               string //螺丝标识，防止重复
