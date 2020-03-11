@@ -39,6 +39,7 @@ type CommonData struct{
 	ClientID string
 	Data string
 	State bool
+	JsonData string
 	Backup1 string
 	Backup2 string
 	Backup3 string
