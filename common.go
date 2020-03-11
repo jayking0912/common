@@ -7,6 +7,7 @@ const (
 	ConnectInfo SendType = 0
 	ReceiveData SendType = 1
 	ToolPset    SendType = 2
+	MqttReceive SendType = 3
 	//Policy_MID      SendType = 2
 	//Policy_AVG      SendType = 3
 )
