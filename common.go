@@ -33,3 +33,8 @@ type ToolData struct {
 	Status                   string //拧紧状态
 	Tighteningbitfieldstatus string //es only 错误标识
 }
+
+type CommonData struct{
+	ClientID string
+	Data string
+}
