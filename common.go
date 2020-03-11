@@ -38,4 +38,13 @@ type ToolData struct {
 type CommonData struct{
 	ClientID string
 	Data string
+	State bool
+	Backup1 string
+	Backup2 string
+	Backup3 string
+}
+
+type MqttMessage struct{
+	Topic string
+	Message string
 }
