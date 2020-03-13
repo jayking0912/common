@@ -3,6 +3,9 @@ package common
 //发送类型
 type SendType int32
 
+//当前螺丝数
+var Pointnum int = 0
+
 const (
 	ConnectInfo SendType = 0
 	ReceiveData SendType = 1
