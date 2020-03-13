@@ -33,6 +33,11 @@ type ToolData struct {
 	TargetTorque             string //目标扭矩
 	Status                   string //拧紧状态
 	Tighteningbitfieldstatus string //es only 错误标识
+	PeakTorque               string //峰值扭矩  开放协议
+	TotalAngle               string //旋转角度  开放协议
+	ClampTorque              string //夹紧力扭矩 开放协议
+	ClampAngle               string //夹紧力角度 开放协议
+
 }
 
 type CommonData struct{
