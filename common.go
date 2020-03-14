@@ -3,8 +3,6 @@ package common
 //发送类型
 type SendType int32
 
-type LogType string
-
 //当前螺丝数
 var Pointnum int = 0
 
@@ -17,10 +15,8 @@ const (
 	//Policy_AVG      SendType = 3
 )
 
-const (
-	LogInfo  LogType = "Info"
-	LogError LogType = "Error"
-)
+const LogInfo string = "Info"
+const LogError string = "Error"
 
 type RecipeInfo struct {
 	TargetPoint [4]byte //目标点位
