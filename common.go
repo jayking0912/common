@@ -3,6 +3,8 @@ package common
 //发送类型
 type SendType int32
 
+type LogType string
+
 //当前螺丝数
 var Pointnum int = 0
 
@@ -13,6 +15,11 @@ const (
 	MqttReceive SendType = 3
 	//Policy_MID      SendType = 2
 	//Policy_AVG      SendType = 3
+)
+
+const (
+	LogInfo  LogType = "Info"
+	LogError LogType = "Error"
 )
 
 type RecipeInfo struct {
@@ -43,17 +50,17 @@ type ToolData struct {
 
 }
 
-type CommonData struct{
+type CommonData struct {
 	ClientID string
-	Data string
-	State bool
+	Data     string
+	State    bool
 	JsonData string
-	Backup1 string
-	Backup2 string
-	Backup3 string
+	Backup1  string
+	Backup2  string
+	Backup3  string
 }
 
-type MqttMessage struct{
-	Topic string
+type MqttMessage struct {
+	Topic   string
 	Message string
 }
